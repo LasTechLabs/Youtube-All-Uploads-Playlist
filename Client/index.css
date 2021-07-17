@@ -1,0 +1,144 @@
+@font-face {
+    font-family:"Roboto";
+    src: url("Assets/Fonts/Roboto-Regular.ttf");
+}
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column{
+    display: flex; 
+    flex-direction: column;
+    height: inherit;
+}
+
+.header{
+    background-color: lightblue;
+    font-size: 40px;
+    padding: 15px 0px 5px 0px;
+    text-decoration: underline;
+}
+
+.subheader{
+    background-color: lightblue;
+    padding: 0px 0px 10px 0px;
+    font-size: 20px;
+}
+
+.desc{
+    font-size: 16px;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.column.subcol.center{
+    margin-top: 7.5vh;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.subcol{
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.centralise{
+    position: relative; 
+    flex:none;
+    text-align: left;
+}
+
+input{
+    position:relative;
+    background-color: transparent;
+    width: max(50vw, min(100vw, 300px)); 
+    padding: 20px 0px 10px 5px; 
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+label{
+    position:absolute; 
+    left:5px; 
+    top:15px;
+    width: 100%;
+    padding: 10; 
+    transition: 0.1s; 
+    pointer-events: none; 
+    font-size: 19px;
+    z-index: 0;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+  top: 5px;
+  width: 95%;
+  font-size: 14.5px;
+  color: rgb(140, 140, 140);
+  overflow-x:hidden;
+  white-space: nowrap;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 5px 14px ;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+.outputLink{
+    margin-top: 20px;
+    font-size: 18px;
+    max-width: 100vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.hide{
+    visibility:hidden;
+}
+
+.trueHide{
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .subcol {
+        flex: 1;
+    }
+    label{
+        font-size: 30px;
+    }
+    .outputLink{
+        font-size: 25px;
+    }
+    .desc{
+        font-size: 20px;
+    }
+}

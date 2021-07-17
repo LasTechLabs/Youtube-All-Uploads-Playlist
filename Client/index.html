@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Uploads Playlist</title>
+    <meta name="description" content="Get a playlist of ALL uploads on a youtube channel. Play all button missing? no problem!">
+    <meta name="keywords" content="YouTube, Playlist, Play ALL, All Videos, All Uploads">
+    <meta name="author" content="Lastech Labs">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="column">
+        <div class="row header">
+            <div class="subcol center bold">
+                Uploads Playlist
+            </div>
+        </div>
+        <div class="row subheader">
+            <div class="subcol center desc">
+                Get a playlist containing every public upload on a youtube channel
+            </div>
+        </div>
+        <div class="row subheader">
+            <div class="subcol center">
+                <span class='bold'>Made by <a id="twitterLink" href="https://www.twitter.com/lastechlabs" target="_blank">@LasTechLabs</a></span>
+            </div>
+        </div>
+        <div class="row" style="flex: 1 1 auto">
+            <div class="column subcol center">
+                <div class="centralise" >
+                    <input id='ytURL' required type="text">
+                    <label>URL of Youtube Channel, Playlist or Video</label>
+                </div>
+                <button id="searchbutton">Go</button>
+                <span class="outputLink">Playlist Link: <a id="playlistLink" href="#" onclick="return false" target="_blank">...</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="" async defer></script>
+    <script src="/__/firebase/8.7.1/firebase-app.js"></script>
+    <script src="/__/firebase/8.7.1/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script>
+        firebase.analytics()
+    </script>
+</body>
+
+</html>

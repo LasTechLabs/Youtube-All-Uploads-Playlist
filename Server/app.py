@@ -57,7 +57,7 @@ def resolve_urlString(yt_url):
 # Decently Robust set of test cases.
 def tests():
   assert(resolve_urlString('https://www.youtube.com/watch?v=hkZEpNsw6zA')) == 'https://www.youtube.com/playlist/?list=UUw7SNYrYei7F5ttQO3o-rpA'
-  assert(resolve_urlString('https://www.youtube.com/user/shadowbeatzinc/videos')) == 'https://www.youtube.com/playlist/?list=UUhzdk2cqwRe1zKP_y6BJx6w'
+  assert(resolve_urlString('https://www.youtube.com/user/numberphile/videos')) == 'https://www.youtube.com/playlist/?list=UUoxcjq-8xIDTYp3uz647V5A'
   assert(resolve_urlString('https://www.youtube.com/watch?v=K8XHmv3ok4Y&list=UUmuobr4DmrmLI1BaGZD3p5w&index=114')) == 'https://www.youtube.com/playlist/?list=UUmuobr4DmrmLI1BaGZD3p5w'
   assert(resolve_urlString('https://www.youtube.com/channel/UCw7SNYrYei7F5ttQO3o-rpA')) == 'https://www.youtube.com/playlist/?list=UUw7SNYrYei7F5ttQO3o-rpA'
   assert(resolve_urlString('https://m.youtube.com/jawed')) == 'https://www.youtube.com/playlist/?list=UU4QobU6STFB0P71PMvOGN5A'

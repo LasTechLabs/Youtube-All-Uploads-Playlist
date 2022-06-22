@@ -48,6 +48,7 @@ html, body{
     margin-top: 7.5vh;
     justify-content: flex-start;
     text-align: center;
+    align-items: center
 }
 
 .subcol{
@@ -63,7 +64,12 @@ html, body{
 .centralise{
     position: relative; 
     flex:none;
-    text-align: left;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 input{
@@ -78,7 +84,6 @@ input{
 }
 
 label{
-    position:absolute; 
     left:5px; 
     top:15px;
     width: 100%;
@@ -87,6 +92,7 @@ label{
     pointer-events: none; 
     font-size: 19px;
     z-index: 0;
+    flex: 1 0 100%;
 }
 
 input:focus ~ label,
